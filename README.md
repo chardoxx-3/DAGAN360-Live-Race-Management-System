@@ -24,12 +24,23 @@ The system is designed for timed race events where runners move through multiple
 
 ## ✨ Key Features
 
-- Admin dashboard for race monitoring
-- Runner registration and management
-- Watcher account management and checkpoint assignment
-- Real-time race log tracking
-- Public leaderboard with live updates
-- Secure login and role-based access
+| Feature | Description |
+| --- | --- |
+| Admin Dashboard | Monitor race activity, recent runner logs, and system overview. |
+| Runner Management | Register, update, and remove runners from the database. |
+| Watcher Management | Create watcher accounts and assign them to checkpoints. |
+| Race Logging | Record runner progress at checkpoints in real time. |
+| Live Leaderboard | Display the latest standings and checkpoint updates for the public. |
+| Authentication | Secure login with role-based access for admin and watcher users. |
+
+## 🏗️ System Architecture
+
+The project follows the Model-View-Controller (MVC) architecture provided by CodeIgniter 4.
+
+- Controllers handle requests, routing, and business logic.
+- Models manage database operations for runners, checkpoints, race logs, and users.
+- Views render the admin dashboard, watcher pages, and public leaderboard.
+- Routes define how users access the admin, watcher, and public areas.
 
 ## 🛠️ Technologies Used
 
@@ -50,11 +61,17 @@ The application uses a MySQL database with the following main tables:
 
 A ready-to-import database dump is available at [dagan360.sql](dagan360.sql).
 
-## 🔐 Access
+## 🔐 Demo Credentials
 
-The login page is available at /auth.
+Use the following account to access the administrator features:
 
-A seeded admin account is included in [dagan360.sql](dagan360.sql) with the username admin. Watcher accounts can also be created from the admin panel.
+| Account | Credentials |
+| --- | --- |
+| Username | admin |
+| Password | password |
+| Role | Administrator |
+
+> Note: These credentials are intended for local/demo use only.
 
 ## 💻 Installation and Setup
 
