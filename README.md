@@ -187,8 +187,11 @@ Password: password
 
 ## 📸 Screenshots
 
-- Login screen: [screenshots/login.png](screenshots/login.png)
-- Public leaderboard: [screenshots/leaderboard.png](screenshots/leaderboard.png)
+### Login
+![Login](screenshots/login.png)
+
+### Liveboard
+![Liveboard](screenshots/liveboard.png)
 
 ## 📄 License
 
