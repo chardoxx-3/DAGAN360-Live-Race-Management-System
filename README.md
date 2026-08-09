@@ -190,8 +190,8 @@ Password: password
 ### Login
 ![Login](screenshots/login.png)
 
-### Liveboard
-![Liveboard](screenshots/liveboard.png)
+### Leaderboard
+![Leaderboard](screenshots/leaderboard.png)
 
 ## 📄 License
 
