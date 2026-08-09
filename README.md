@@ -73,28 +73,52 @@ Use the following account to access the administrator features:
 
 > Note: These credentials are intended for local/demo use only.
 
-## 💻 Installation and Setup
+## 💻 How to Install & Run
 
-### 1. Requirements
+### 1. Install the Requirements
 
-Make sure the following are installed:
+Before running the project, install:
 
 - PHP 8.1 or higher
 - Composer
 - MySQL / MariaDB
-- A local web server such as XAMPP or Laragon
+- XAMPP or another local PHP development environment
 
-### 2. Install dependencies
+### 2. Download the Project
 
-Run the following command in the project root:
+Clone the repository:
+
+```bash
+git clone https://github.com/chardoxx-3/DAGAN360-Live-Race-Management-System.git
+```
+
+Then enter the project directory:
+
+```bash
+cd DAGAN360-Live-Race-Management-System
+```
+
+You can also download the repository as a ZIP from GitHub and extract it to your local development folder.
+
+### 3. Install CodeIgniter Dependencies
+
+Inside the project folder, run:
 
 ```bash
 composer install
 ```
 
-### 3. Configure the environment
+This installs the PHP dependencies required by the CodeIgniter 4 application.
 
-Update the database settings in the project .env file.
+### 4. Configure the Environment
+
+Copy the example environment file:
+
+```bash
+copy env .env
+```
+
+Then open .env and configure your database connection.
 
 Example:
 
@@ -107,34 +131,50 @@ database.default.DBDriver = MySQLi
 database.default.port = 3306
 ```
 
-### 4. Create the database
+Adjust the database name, username, and password according to your local MySQL configuration.
 
-Create a MySQL database named dagan360 and import [dagan360.sql](dagan360.sql).
+### 5. Create the Database
 
-You can do this with phpMyAdmin or from the terminal:
+Open phpMyAdmin or MySQL and create a database for the project.
 
-```bash
-mysql -u root -p dagan360 < dagan360.sql
+For example:
+
+```text
+dagan360
 ```
 
-### 5. Start the application
+Import the SQL database file included in the project:
 
-Run:
+```text
+dagan360.sql
+```
+
+This will create the required tables and sample data.
+
+### 6. Start the CodeIgniter Development Server
+
+From the project directory, run:
 
 ```bash
 php spark serve
 ```
 
-Then open:
+The application will normally be available at:
 
 ```text
 http://localhost:8080
 ```
 
-### 6. Log in
+Open the address in your browser.
 
-- Visit /auth
-- Sign in with the seeded admin account from the SQL dump
+### 7. Login
+
+Use the demo administrator account:
+
+```text
+Username: admin
+Password: password
+```
 
 ## 🧭 Main Routes
 
